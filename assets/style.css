@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     background-color: rgb(184, 209, 230);
     font-family: 'Courier New', Courier, monospace;
@@ -9,7 +10,7 @@
 
 h1 {
     position: relative;
-    left: 63px;
+    left: 85px;
     top: 20px;
 }
 
@@ -17,11 +18,9 @@ header img {
     height: 50px;
     width: 50px;
     border-radius: 100px;
-    display: flex;
-    justify-content: flex-start;
     position: relative;
-    top: -20px;
-    left: 5px;
+    top: -25px;
+    right: -25px;    
 }
 
 header img:hover {
@@ -31,9 +30,14 @@ header img:hover {
 
 nav a {
     border: 1px solid;
+    padding: 10px;
     text-decoration: none;
     margin-left: 10px;
     font-size: 18px;
+    border-radius: 25px;
+}
+nav a:hover {
+    color: antiquewhite;
 }
 
 .flex-container {
@@ -48,77 +52,92 @@ figure img {
 
 /* Main Content */
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* About Me*/
+
 #about-me {
     position: relative;
-    top: 60px;
+    top: 25px;
     width: 100px;
-    margin-left: 25px;
-}
-
-#work {
-    position: relative;
-    top: 10px;
-    width: 100px;
-    height: 700px;
-    border-right: 2px solid rgba(62, 105, 161, 0.979);
-    padding-right: 45px;
-}
-
-main figure a {
-    display: flex;
-    width: 500px;
-    height: 350px;
-    margin-left: 225px;
-    position: relative;
-    top: -660px;
-}
-
-main figure a :hover {
-    width: 750px;
-    height: 600px;
-    z-index: 1;
-}
-
-figcaption {
-    margin-top: 10px;
-    margin-left: 375px;
-    position: relative;
-    bottom: 670px;
-}
-
-.work {
-    height: 300px;
-    width: 300px;
-    position: relative;
-    top: 50px;
-}
-
-main h2 {
-    color: rgba(62, 105, 161, 0.979);
-    position: relative;
-    margin-top: 50px;
     margin-left: 25px;
 }
 
 main p {
-    margin-left: 170px;
+    position: relative;
+    left: 125px;
+    top: -35px;
     border-left: 2px solid;
     padding-left: 50px;
-    width: 500px;
+    width: 700px;
 }
 
-#contact-me {
-    position: relative;
-    bottom: 700px;
+/* Work */
+
+#work {
     width: 100px;
-    border-right: 2px solid;
-    padding-right: 45px;
+    position: relative;
+    top: 10px;
 }
+
+#border {
+    position: relative;
+    left: 125px;
+    top: -29px;
+    border-left: 2px solid;
+    height: 656px;
+}
+
+aside a {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 350px;
+    position: relative;
+    left: 175px;
+    bottom: 10px;
+}
+
+aside a :hover {
+    width: 600px;
+    height: 450px;
+    z-index: 2;
+}
+
+figcaption {
+    position: relative;
+    left: 325px;
+    top: -27px;
+}
+
+main h2 {
+    color: rgba(62, 105, 161, 0.979);
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+/* Contact Me Header */
+
+#contact-me {
+    width: 110px;
+    border-right: 2px solid;
+    margin-left: 17px;
+}
+
+/* Contact Links */
 
 .contact-me {
     position: relative;
-    bottom: 740px;
     left: 200px;
+    bottom: 35px;
     text-decoration: none;
     padding-right: 15px;
+}
+
+.contact-me:hover {
+    color: antiquewhite;
 }
