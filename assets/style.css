@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    background-color: rgb(184, 209, 230);
+    font-family: 'Courier New', Courier, monospace;
+    color:rgba(62, 105, 161, 0.979);
+}
+
+/* Header */
+
+h1 {
+    position: relative;
+    left: 63px;
+    top: 20px;
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: -20px;
+    left: 5px;
+}
+
+header img:hover {
+    height: 75px;
+    width: 75px;
+}
+
+nav a {
+    border: 1px solid;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.flex-container {
+    display:flex;
+    justify-content: flex-end;
+}
+
+figure img {
+    width: 100%;
+    height: 250px;
+}
+
+/* Main Content */
+
+#about-me {
+    position: relative;
+    top: 60px;
+    width: 100px;
+    margin-left: 25px;
+}
+
+#work {
+    position: relative;
+    top: 10px;
+    width: 100px;
+    height: 700px;
+    border-right: 2px solid rgba(62, 105, 161, 0.979);
+    padding-right: 45px;
+}
+
+main figure a {
+    display: flex;
+    width: 500px;
+    height: 350px;
+    margin-left: 225px;
+    position: relative;
+    top: -660px;
+}
+
+main figure a :hover {
+    width: 750px;
+    height: 600px;
+    z-index: 1;
+}
+
+figcaption {
+    margin-top: 10px;
+    margin-left: 375px;
+    position: relative;
+    bottom: 670px;
+}
+
+.work {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 50px;
+}
+
+main h2 {
+    color: rgba(62, 105, 161, 0.979);
+    position: relative;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+main p {
+    margin-left: 170px;
+    border-left: 2px solid;
+    padding-left: 50px;
+    width: 500px;
+}
+
+#contact-me {
+    position: relative;
+    bottom: 700px;
+    width: 100px;
+    border-right: 2px solid;
+    padding-right: 45px;
+}
+
+.contact-me {
+    position: relative;
+    bottom: 740px;
+    left: 200px;
+    text-decoration: none;
+    padding-right: 15px;
+}
