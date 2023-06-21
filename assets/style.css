@@ -1,18 +1,20 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    background-color: rgb(184, 209, 230);
     font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(184, 209, 230);
     color:rgba(62, 105, 161, 0.979);
 }
 
-/* Header */
+/* Header Text */
 
 h1 {
     position: relative;
     left: 85px;
     top: 20px;
 }
+
+/* Header Image */
 
 header img {
     height: 50px;
@@ -27,6 +29,8 @@ header img:hover {
     height: 75px;
     width: 75px;
 }
+
+/* Navigation Links */
 
 nav a {
     border: 1px solid;
@@ -44,6 +48,8 @@ nav a:hover {
     display:flex;
     justify-content: flex-end;
 }
+
+/* Header Image */
 
 figure img {
     width: 100%;
@@ -87,31 +93,39 @@ main p {
 #border {
     position: relative;
     left: 125px;
-    top: -29px;
+    top: -52px;
     border-left: 2px solid;
     height: 656px;
 }
 
-aside a {
+/* Site Links */
+
+figure a {
     display: flex;
     flex-wrap: wrap;
-    width: 25%;
+    width: 30%;
     height: 350px;
     position: relative;
     left: 175px;
     bottom: 10px;
 }
 
-aside a :hover {
+figure a :hover {
     width: 600px;
     height: 450px;
-    z-index: 2;
+    z-index: 3;
 }
 
 figcaption {
+    width: 100px;
+    height: 54px;
     position: relative;
-    left: 325px;
-    top: -27px;
+    left: 175px;
+    top: 44px;
+    background-color: white;
+    border: 2px solid rgba(62, 105, 161, 0.979);
+    font-weight: bolder;
+    z-index: 2;
 }
 
 main h2 {
@@ -139,5 +153,6 @@ main h2 {
 }
 
 .contact-me:hover {
+    background-color: rgba(62, 105, 161, 0.979);
     color: antiquewhite;
 }
